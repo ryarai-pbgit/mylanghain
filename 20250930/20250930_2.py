@@ -41,7 +41,7 @@ vector_store = InMemoryVectorStore(embeddings)
 ids = vector_store.add_documents(documents=all_splits)
 
 results = vector_store.similarity_search(
-    "今期のNRIの営業利益は？"
+    "今期の営業利益は？"
 )
 
 print(results[0])
